@@ -31,12 +31,12 @@ $color3: #d4b869;
 
   .move {
     &-right{
-    transition: all 20s ease-in-out;
+    transition: all 10s ease-in-out;
     transform: rotate(180deg);
     background: $color2 !important;
     }
     &-left{
-    transition: all 20s ease-in-out;
+    transition: all 10s ease-in-out;
     transform: rotate(-180deg);
     background: $color3 !important;
     }
