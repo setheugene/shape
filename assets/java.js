@@ -17,15 +17,21 @@ for(var i=1; i < 101; i++){
    newDiv.id = 'b_'+i;
    newDiv.className = 'block';
    toAdd.appendChild(newDiv);
+   if (i %2){
+       newDiv.className='block two'
+   }else{
+       newDiv.className='block one'
+   }
 }
 
 document.getElementById('shapes').appendChild(toAdd);
 
     // $("#container").addClass('block2');
+    $(".one").click(function(){
+        $(this).addClass('move-left');
+    });
 
-
-    $(".block").click(function(){
-        console.log('click');
-        $(this).addClass('move');
+    $(".two").click(function(){
+        $(this).addClass('move-right');
     });
 });

@@ -1,5 +1,6 @@
 $color: #19414d;
 $color2: #5b8a76;
+$color3: #d4b869;
 
 // #shapes {
 //     height: 100vh;
@@ -29,9 +30,16 @@ $color2: #5b8a76;
   }
 
   .move {
-    transition: all 20s ease-in;
-      transform: rotate(180deg);
-      background: $color2 !important;
+    &-right{
+    transition: all 20s ease-in-out;
+    transform: rotate(180deg);
+    background: $color2 !important;
+    }
+    &-left{
+    transition: all 20s ease-in-out;
+    transform: rotate(-180deg);
+    background: $color3 !important;
+    }
   }
 
 //   .block:hover{
