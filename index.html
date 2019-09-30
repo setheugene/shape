@@ -1,31 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style/main.css" type="text/css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="stylesheet" href="./style/main.css" type="text/css" /> -->
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/java.js"></script>
-    
-</head>
-<body>
-
-    <div id="container"></div>
-    
-        <div id="shapes">
-        <!-- <div class="one block"><h1></h1></div>
-          <div class="two block"><h1></h1></div>
-          <div class="three block"><h1></h1></div>
-          <div class="four block"><h1></h1></div>
-          <div class="five block"><h1></h1></div>
-          <div class="six block"><h1></h1></div>
-          <div class="seven block"><h1></h1></div>
-          <div class="eight block"><h1></h1></div>
-          <div class="nine block"><h1></h1></div>
-          <div class="ten block"><h1></h1></div> -->
+  </head>
+  <body>
+    <div id="container">
+      <div id="shapes">
+        <!-- row one -->
+        <div class="r1">
+          <div class="r1c1"></div>
+          <div class="r1c2"></div>
+          <div class="r1c3">
+            <div class="r1c3r1"></div>
+            <div class="r1c3r2">
+              <div class="r1c3r2c1"></div>
+              <div class="r1c3r2c2"></div>
+            </div>
+            <div class="r1c3r3">
+              <div class="r1c3r3c1"></div>
+              <div class="r1c3r3c2"></div>
+              <div class="r1c3r3c3"></div>
+              <div class="r1c3r3c4"></div>
+            </div>
+            <div class="r1c3r4">
+              <div class="r1c3r4c1"></div>
+              <div class="r1c3r4c2"></div>
+              <div class="r1c3r4c3"></div>
+              <div class="r1c3r4c4"></div>
+              <div class="r1c3r4c5"></div>
+              <div class="r1c3r4c6"></div>
+              <div class="r1c3r4c7"></div>
+            </div>
+            <div class="r1c3r5"></div>
+            <div class="r1c3r6"></div>
+            <div class="r1c3r7"></div>
+            <div class="r1c3r8"></div>
+          </div>
+          <div class="r1c4">
+            <div class="r1c4r1"></div>
+            <div class="r1c4r2">
+              <div class="r1c4r2c1"></div>
+              <div class="r1c4r2c2"></div>
+            </div>
+            <div class="r1c4r3">
+              <div class="r1c4r3c1"></div>
+              <div class="r1c4r3c2"></div>
+              <div class="r1c4r3c3"></div>
+              <div class="r1c4r3c4"></div>
+            </div>
+            <div class="r1c4r4">
+              <div class="r1c4r4c1"></div>
+              <div class="r1c4r4c2"></div>
+              <div class="r1c4r4c3"></div>
+              <div class="r1c4r4c4"></div>
+            </div>
+          </div>
         </div>
-     
-      
-</body>
+        <!-- row two -->
+        <div class="r2">
+          <div class="r2c1"></div>
+          <div class="r2c2"></div>
+          <div class="r2c3">
+            <div class="r2c3r1">
+              <div class="r2c3r1c1"></div>
+              <div class="r2c3r1c2"></div>
+              <div class="r2c3r1c3"></div>
+              <div class="r2c3r1c4"></div>
+              <div class="r2c3r1c5"></div>
+              <div class="r2c3r1c6"></div>
+              <div class="r2c3r1c7"></div>
+            </div>
+            <div class="r2c3r2">
+              <div class="r2c3r2c1"></div>
+              <div class="r2c3r2c2"></div>
+              <div class="r2c3r2c3"></div>
+              <div class="r2c3r2c4"></div>
+            </div>
+            <div class="r2c3r3">
+              <div class="r2c3r3c1"></div>
+              <div class="r2c3r3c2"></div>
+            </div>
+            <div class="r2c3r4"></div>
+          </div>
+          <div class="r2c4">
+            <div class="r2c4r1">
+              <div class="r2c4r1c1"></div>
+              <div class="r2c4r1c2"></div>
+              <div class="r2c4r1c3"></div>
+              <div class="r2c4r1c4"></div>
+            </div>
+            <div class="r2c4r2">
+              <div class="r2c4r2c1"></div>
+              <div class="r2c4r2c2"></div>
+              <div class="r2c4r2c3"></div>
+              <div class="r2c4r2c4"></div>
+            </div>
+            <div class="r2c4r3">
+              <div class="r2c4r3c1"></div>
+              <div class="r2c4r3c2"></div>
+            </div>
+            <div class="r2c4r4"></div>
+          </div>
+        </div>
+        <!-- row three -->
+        <div class="r3">
+          <div class="r3c1">
+            <div class="r3c1r1">
+              <div class="r3c1r1c1"></div>
+              <div class="r3c1r1c2"></div>
+              <div class="r3c1r1c3"></div>
+            </div>
+            <div class="r3c1r2">
+              <div class="r3c1r2c1"></div>
+              <div class="r3c1r2c2"></div>
+              <div class="r3c1r2c3"></div>
+              <div class="r3c1r2c4"></div>
+              <div class="r3c1r2c5"></div>
+            </div>
+            <div class="r3c1r3">
+              <div class="r3c1r3c1"></div>
+              <div class="r3c1r3c2"></div>
+              <div class="r3c1r3c3"></div>
+              <div class="r3c1r3c4"></div>
+              <div class="r3c1r3c5"></div>
+            </div>
+            <div class="r3c1r4">
+              <div class="r3c1r4c1"></div>
+              <div class="r3c1r4c2"></div>
+              <div class="r3c1r4c3"></div>
+              <div class="r3c1r4c4"></div>
+              <div class="r3c1r4c5"></div>
+            </div>
+            <div class="r3c1r5">
+              <div class="r3c1r5c1"></div>
+              <div class="r3c1r5c2"></div>
+              <div class="r3c1r5c3"></div>
+              <div class="r3c1r5c4"></div>
+              <div class="r3c1r5c5"></div>
+            </div>
+          </div>
+          <div class="r3c2">
+            <div class="r3c2r1">
+              <div class="r3c2r1c1"></div>
+              <div class="r3c2r1c2"></div>
+              <div class="r3c2r1c3"></div>
+              <div class="r3c2r1c4"></div>
+            </div>
+          </div>
+          <div class="r3c3">
+            <div class="r3c3r1">
+              <div class="r3c3r1c1"></div>
+              <div class="r3c3r1c2"></div>
+              <div class="r3c3r1c3"></div>
+              <div class="r3c3r1c4"></div>
+            </div>
+          </div>
+          <div class="r3c4">
+            <div class="r3c3r1">
+              <div class="r3c4r1c1"></div>
+              <div class="r3c4r1c2"></div>
+            </div>
+          </div>
+        </div>
+        <!-- ---------------row four------------------ -->
+        <div class="r4">
+          <row class="r4c1">
+            <div class="r4c1r1">
+              <div class="r4c1r1c1"></div>
+              <div class="r4c1r1c2"></div>
+              <div class="r4c1r1c3"></div>
+              <div class="r4c1r1c4"></div>
+              <div class="r4c1r1c5"></div>
+            </div>
+            <div class="r4c1r2">
+              <div class="r4c1r2c1"></div>
+              <div class="r4c1r2c2"></div>
+              <div class="r4c1r2c3"></div>
+              <div class="r4c1r2c4"></div>
+              <div class="r4c1r2c5"></div>
+            </div>
+            <div class="r4c1r3">
+              <div class="r4c1r3c1"></div>
+              <div class="r4c1r3c2"></div>
+              <div class="r4c1r3c3"></div>
+              <div class="r4c1r3c4"></div>
+              <div class="r4c1r3c5"></div>
+            </div>
+            <div class="r4c1r4">
+              <div class="r4c1r4c1"></div>
+              <div class="r4c1r4c2"></div>
+              <div class="r4c1r4c3"></div>
+            </div>
+          </row>
+          <div class="r4c2">
+            <div class="r4c2r1">
+              <div class="r4c2r1c1"></div>
+              <div class="r4c2r1c2"></div>
+              <div class="r4c2r1c3"></div>
+              <div class="r4c2r1c4"></div>
+            </div>
+          </div>
+          <div class="r4c3">
+            <div class="r4c3r1">
+              <div class="r4c3r1c1"></div>
+              <div class="r4c3r1c2"></div>
+              <div class="r4c3r1c3"></div>
+              <div class="r4c3r1c4"></div>
+            </div>
+          </div>
+          <div class="r4c4">
+            <div class="r4c3r1">
+              <div class="r4c4r1c1"></div>
+              <div class="r4c4r1c2"></div>
+            </div>
+          </div>
+        </div>
+        <!-- -------------row 5------------------ -->
+        <div class="r5">
+          <div class="r5c1">
+            <div class="r5c1r1">
+              <div class="r5c1r1c1"></div>
+              <div class="r5c1r1c2"></div>
+            </div>
+            <div class="r5c1r2">
+              <div class="r5c1r2c1"></div>
+              <div class="r5c1r2c2"></div>
+            </div>
+            <div class="r5c1r3">
+              <div class="r5c1r3c1"></div>
+              <div class="r5c1r3c2"></div>
+            </div>
+            <div class="r5c1r4">
+              <div class="r5c1r4c1"></div>
+              <div class="r5c1r4c2"></div>
+            </div>
+          </div>
+          <div class="r5c2">
+            <div class="r5c2r1">
+              <div class="r5c2r1c1"></div>
+            </div>
+            <div class="r5c2r2">
+                <div class="r5c2r2c1"></div>
+                <div class="r5c2r2c2"></div>
+                <div class="r5c2r2c3"></div>
+            </div>
+            <div class="r5c2r3">
+                <div class="r5c2r3c1"></div>
+                <div class="r5c2r3c2"></div>
+                <div class="r5c2r3c3"></div>
+                <div class="r5c2r3c4"></div>
+                <div class="r5c2r3c5"></div>
+                <div class="r5c2r3c6"></div>
+                <div class="r5c2r3c7"></div>
+            </div>
+          </div>
+          <div class="r5c3">
+            <div class="r5c3r1">
+              <div class="r5c3r1c1"></div>
+              <div class="r5c3r1c2"></div>
+              <div class="r5c3r1c3"></div>
+              <div class="r5c3r1c4"></div>
+            </div>
+            <div class="r5c3r2">
+                <div class="r5c3r2c1"></div>
+                <div class="r5c3r2c2"></div>
+                <div class="r5c3r2c3"></div>
+                <div class="r5c3r2c4"></div>
+            </div>
+          </div>
+          <div class="r5c4">
+            <div class="r5c4r1">
+              <div class="r5c4r1c1"></div>
+              <div class="r5c4r1c2"></div>
+              <div class="r5c4r1c3"></div>
+            </div>
+            <div class="r5c4r2">
+                <div class="r5c4r2c1"></div>
+                <div class="r5c4r2c2"></div>
+                <div class="r5c4r2c3"></div>
+            </div>
+            <div class="r5c4r3">
+                <div class="r5c4r3c1"></div>
+                <div class="r5c4r3c2"></div>
+                <div class="r5c4r3c3"></div>
+            </div>
+            <div class="r5c4r4">
+                <div class="r5c4r4c1"></div>
+                <div class="r5c4r4c2"></div>
+                <div class="r5c4r4c3"></div>
+            </div>
+          </div>
+        </div>
+        <!-- ---------------row 6----------------- -->
+        <div class="r6">
+          <div class="r6c1">
+            <div class="r6c1r1">
+              <div class="r6c1r1c1"></div>
+              <div class="r6c1r1c2"></div>
+            </div>
+            <div class="r6c1r2">
+              <div class="r6c1r2c1"></div>
+              <div class="r6c1r2c2"></div>
+            </div>
+            <div class="r6c1r3">
+              <div class="r6c1r3c1"></div>
+              <div class="r6c1r3c2"></div>
+            </div>
+            <div class="r6c1r4">
+              <div class="r6c1r4c1"></div>
+              <div class="r6c1r4c2"></div>
+            </div>
+          </div>
+          <div class="r6c2">
+            <div class="r6c2r1">
+              <div class="r6c2r1c1"></div>
+              <div class="r6c2r1c2"></div>
+              <div class="r6c2r1c3"></div>
+              <div class="r6c2r1c4"></div>
+              <div class="r6c2r1c5"></div>
+              <div class="r6c2r1c6"></div>
+              <div class="r6c2r1c7"></div>
+            </div>
+            <div class="r6c2r2">
+              <div class="r6c2r2c1"></div>
+              <div class="r6c2r2c2"></div>
+              <div class="r6c2r2c3"></div>
+              <div class="r6c2r2c4"></div>
+              <div class="r6c2r2c5"></div>
+              <div class="r6c2r2c6"></div>
+              <div class="r6c2r2c7"></div>
+            </div>
+            <div class="r6c2r3">
+              <div class="r6c2r3c1"></div>
+              <div class="r6c2r3c2"></div>
+              <div class="r6c2r3c3"></div>
+            </div>
+            <div class="r6c2r4">
+              <div class="r6c2r4c1"></div>
+            </div>
+          </div>
+
+          <div class="r6c3">
+            <div class="r6c3r1">
+              <div class="r6c3r1c1"></div>
+              <div class="r6c3r1c2"></div>
+              <div class="r6c3r1c3"></div>
+              <div class="r6c3r1c4"></div>
+            </div>
+            <div class="r6c3r2">
+                <div class="r6c3r2c1"></div>
+                <div class="r6c3r2c2"></div>
+                <div class="r6c3r2c3"></div>
+                <div class="r6c3r2c4"></div>
+            </div>
+          </div>
+          <div class="r6c4">
+            <div class="r6c4r1">
+              <div class="r6c4r1c1"></div>
+              <div class="r6c4r1c2"></div>
+              <div class="r6c4r1c3"></div>
+            </div>
+            <div class="r6c4r2">
+                <div class="r6c4r2c1"></div>
+                <div class="r6c4r2c2"></div>
+                <div class="r6c4r2c3"></div>
+            </div>
+            <div class="r6c4r3">
+                <div class="r6c4r3c1"></div>
+                <div class="r6c4r3c2"></div>
+                <div class="r6c4r3c3"></div>
+            </div>
+            <div class="r6c4r4">
+                <div class="r6c4r4c1"></div>
+                <div class="r6c4r4c2"></div>
+                <div class="r6c4r4c3"></div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------- row 7 --------------------- -->
+        <div class="r7">
+          <div class="r7c1">
+            <div class="r7c1r1">
+              <div class="r7c1r1c1"></div>
+              <div class="r7c1r1c2"></div>
+              <div class="r7c1r1c3"></div>
+            </div>
+            <div class="r7c1r2">
+              <div class="r7c1r2c1"></div>
+              <div class="r7c1r2c2"></div>
+              <div class="r7c1r2c3"></div>
+              <div class="r7c1r2c4"></div>
+              <div class="r7c1r2c5"></div>
+            </div>
+            <div class="r7c1r3">
+              <div class="r7c1r3c1"></div>
+              <div class="r7c1r3c2"></div>
+              <div class="r7c1r3c3"></div>
+              <div class="r7c1r3c4"></div>
+              <div class="r7c1r3c5"></div>
+            </div>
+            <div class="r7c1r4">
+              <div class="r7c1r4c1"></div>
+              <div class="r7c1r4c2"></div>
+              <div class="r7c1r4c3"></div>
+              <div class="r7c1r4c4"></div>
+              <div class="r7c1r4c5"></div>
+            </div>
+            <div class="r7c1r5">
+              <div class="r7c1r5c1"></div>
+              <div class="r7c1r5c2"></div>
+              <div class="r7c1r5c3"></div>
+              <div class="r7c1r5c4"></div>
+              <div class="r7c1r5c5"></div>
+            </div>
+          </div>
+          <!-- -------------------row 7 column 2------------------------ -->
+          <div class="r7c2">
+            <div class="r7c2r1">
+              <div class="r7c2r1c1"></div>
+            </div>
+            <div class="r7c2r2">
+              <div class="r7c2r2c1"></div>
+            </div>
+          </div>
+                              <!-- row 7 column 3 -->
+          <div class="r7c3">
+            <div class="r7c3r1">
+              <div class="r7c3r1c1"></div>
+            </div>
+            <div class="r7c3r2">
+              <div class="r7c3r1c2"></div>
+            </div>
+          </div>
+                  <!-- row 7 column 4 -->
+                  <div class="r7c4">
+                    <div class="r7c4r1">
+                      <div class="r7c4r1c1"></div>
+                    </div>
+                  </div>
+        </div>
+        <!-- ===========================row 8============================== -->
+        <div class="r8">
+          <div class="r8c1">
+            <div class="r8c1r1">
+              <div class="r8c1r1c1"></div>
+              <div class="r8c1r1c2"></div>
+              <div class="r8c1r1c3"></div>
+              <div class="r8c1r1c4"></div>
+              <div class="r8c1r1c5"></div>
+            </div>
+            <div class="r8c1r2">
+              <div class="r8c1r2c1"></div>
+              <div class="r8c1r2c2"></div>
+              <div class="r8c1r2c3"></div>
+              <div class="r8c1r2c4"></div>
+              <div class="r8c1r2c5"></div>
+            </div>
+            <div class="r8c1r3">
+              <div class="r8c1r3c1"></div>
+              <div class="r8c1r3c2"></div>
+              <div class="r8c1r3c3"></div>
+              <div class="r8c1r3c4"></div>
+              <div class="r8c1r3c5"></div>
+            </div>
+            <div class="r8c1r4">
+              <div class="r8c1r4c1"></div>
+              <div class="r8c1r4c2"></div>
+              <div class="r8c1r4c3"></div>
+            </div>
+          </div>
+          <!-- row 8 column 2------------------------ -->
+          <div class="r8c2">
+            <div class="r8c2r1">
+              <div class="r8c2r1c1"></div>
+            </div>
+            <div class="r8c2r2">
+              <div class="r8c2r2c1"></div>
+            </div>
+          </div>
+          <!-- ------------row 8 column 3---------------------- -->
+          <div class="r8c3">
+            <div class="r8c3r1">
+              <div class="r8c3r1c1"></div>
+            </div>
+            <div class="r8c3r2">
+              <div class="r8c3r2c1"></div>
+            </div>
+          </div>
+        </div>
+        <!-- -------------row 9 ---------------------- -->
+        <div class="r9">
+          <div class="r9c1">
+            <div class="r9c1r1">
+              <div class="r9c1r1c1"></div>
+              <div class="r9c1r1c2"></div>
+              <div class="r9c1r1c3"></div>
+              <div class="r9c1r1c4"></div>
+              <div class="r9c1r1c5"></div>
+              <div class="r9c1r1c6"></div>
+              <div class="r9c1r1c7"></div>
+              <div class="r9c1r1c8"></div>
+            </div>
+          </div>
+          <!-- -------------------row 9 column 2------------------------ -->
+          <div class="r9c2">
+            <div class="r9c2r1">
+              <div class="r9c2r1c1"></div>
+            </div>
+            <div class="r9c2r2">
+              <div class="r9c2r2c1"></div>
+            </div>
+          </div>
+                              <!-- row 9 column 3 -->
+          <div class="r9c3">
+            <div class="r9c3r1">
+              <div class="r9c3r1c1"></div>
+            </div>
+            <div class="r9c3r2">
+              <div class="r9c3r1c2"></div>
+            </div>
+          </div>
+                  <!-- row 9 column 4 -->
+                  <div class="r9c4">
+                    <div class="r9c4r1">
+                      <div class="r9c4r1c1"></div>
+                    </div>
+                  </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

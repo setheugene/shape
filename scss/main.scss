@@ -1,6 +1,6 @@
-$color: #19414d;
-$color2: #5b8a76;
-$color3: #d4b869;
+// $color: #19414d;
+// $color2: #5b8a76;
+// $color3: #d4b869;
 
 // #shapes {
 //     height: 100vh;
@@ -13,37 +13,1847 @@ $color3: #d4b869;
 
 //   }
 
-  @for $i from 1 through 100 {
-    $width: percentage(1 / $i);
-    
-    #b_#{$i} {
-        grid-area: $i;
-        background: lighten($color, $i + 0%); 
-    }
+// turning stripes--------------------------------------
+//   @for $i from 1 through 100 {
+//     $width: percentage(1 / $i);
+
+//     #b_#{$i} {
+//         grid-area: $i;
+//         background: lighten($color, $i + 0%);
+//     }
+// }
+
+//   .block {
+//     // border: 5px solid black;
+//     height: 1vh;
+//     /* margin: -5px; */
+//     transition: all 2s ease-in;
+//   }
+
+//   .move {
+//     &-right{
+//     transition: all 10s ease-in-out;
+//     transform: rotate(180deg);
+//     background: $color2 !important;
+//     }
+//     &-left{
+//     transition: all 10s ease-in-out;
+//     transform: rotate(-180deg);
+//     background: $color3 !important;
+//     }
+//   }
+//-------------------------------------------------------
+//
+//sullystring---------------------------------------------
+//
+//
+
+$dark: #0a111a;
+$light: #f1f1f1;
+$peach: #ee6b67;
+$blue: #3350d4;
+$purple: #5e4089;
+$yellow: #d1b967;
+$dark-peach: #bc555d;
+
+#container {
+  background-color: $yellow;
+  padding: 50px 100px 50px;
+  width: 88vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-  .block {
-    // border: 5px solid black;
-    height: 1vh;
-    /* margin: -5px; */
-    transition: all 2s ease-in;
+#shapes {
+  background-color: $light;
+  height: 75vh;
+  width: 75vw;
+  //----------------------------------------
+  .r1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    grid-auto-rows: 7.9vh;
+
+    &c1 {
+      background-color: $dark;
+      justify-self: end;
+      width: 50%;
+    }
+
+    &c2 {
+      background-color: $dark;
+      justify-self: end;
+      width: 50%;
+    }
+
+    &c3 {
+      &r1 {
+        height: 25%;
+        width: 100%;
+        background-color: $peach;
+      }
+
+      &r2 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          width: 12.5%;
+          background-color: $blue;
+        }
+
+        &c2 {
+          width: 87.5%;
+          background-color: $dark;
+        }
+      }
+
+      &r3 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          width: 12.5%;
+          background-color: $blue;
+        }
+
+        &c2 {
+          width: 12.5%;
+          background-color: $peach;
+        }
+
+        &c3 {
+          width: 12.5%;
+          background-color: $purple;
+        }
+
+        &c4 {
+          width: 62.6%;
+          background-color: $dark-peach;
+        }
+      }
+
+      &r4 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          width: 12.5%;
+          background-color: $blue;
+        }
+
+        &c2 {
+          width: 12.5%;
+          background-color: $peach;
+        }
+
+        &c3 {
+          width: 12.5%;
+          background-color: $purple;
+        }
+
+        &c4 {
+          width: 12.5%;
+          background-color: $yellow;
+        }
+
+        &c5 {
+          width: 12.5%;
+          background-color: $dark;
+        }
+
+        &c6 {
+          width: 25.1%;
+          background-color: $blue;
+        }
+
+        &c7 {
+          width: 12.5%;
+          background-color: $yellow;
+        }
+      }
+    }
+
+    &c4 {
+      &r1 {
+        display: flex;
+        height: 25%;
+        background-color: $peach;
+        width: 100%;
+      }
+
+      &r2 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $dark;
+          width: 75%;
+        }
+
+        &c2 {
+          background-color: $blue;
+          width: 25%;
+        }
+      }
+
+      &r3 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $dark-peach;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $purple;
+          width: 25%;
+        }
+
+        &c3 {
+          background-color: $peach;
+          width: 25%;
+        }
+
+        &c4 {
+          background-color: $blue;
+          width: 25%;
+        }
+      }
+
+      &r4 {
+        display: flex;
+        height: 25%;
+        &c1 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $purple;
+          width: 25%;
+        }
+
+        &c3 {
+          background-color: $peach;
+          width: 25%;
+        }
+
+        &c4 {
+          background-color: $blue;
+          width: 25%;
+        }
+      }
+    }
+  }
+  // row tow ------------------------------
+
+  .r2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    grid-auto-rows: 7.9vh;
+
+    &c1 {
+      background-color: $dark;
+      width: 50%;
+    }
+
+    &c2 {
+      background-color: $dark;
+      justify-self: start;
+      width: 50%;
+    }
+
+    &c3 {
+      &r4 {
+        height: 25%;
+        width: 100%;
+        background-color: $peach;
+      }
+
+      &r3 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          width: 12.5%;
+          background-color: $blue;
+        }
+
+        &c2 {
+          width: 87.5%;
+          background-color: $dark;
+        }
+      }
+
+      &r2 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          width: 12.5%;
+          background-color: $blue;
+        }
+
+        &c2 {
+          width: 12.5%;
+          background-color: $peach;
+        }
+
+        &c3 {
+          width: 12.5%;
+          background-color: $purple;
+        }
+
+        &c4 {
+          width: 62.6%;
+          background-color: $dark-peach;
+        }
+      }
+
+      &r1 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          width: 12.5%;
+          background-color: $blue;
+        }
+
+        &c2 {
+          width: 12.5%;
+          background-color: $peach;
+        }
+
+        &c3 {
+          width: 12.5%;
+          background-color: $purple;
+        }
+
+        &c4 {
+          width: 12.5%;
+          background-color: $dark;
+        }
+
+        &c5 {
+          width: 12.5%;
+          background-color: $yellow;
+        }
+
+        &c6 {
+          width: 25.1%;
+          background-color: $blue;
+        }
+
+        &c7 {
+          width: 12.5%;
+          background-color: $dark;
+        }
+      }
+    }
+    &c4 {
+      &r4 {
+        display: flex;
+        height: 25%;
+        background-color: $peach;
+        width: 100%;
+      }
+
+      &r3 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $dark;
+          width: 75%;
+        }
+
+        &c2 {
+          background-color: $blue;
+          width: 25%;
+        }
+      }
+
+      &r2 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $dark-peach;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $purple;
+          width: 25%;
+        }
+
+        &c3 {
+          background-color: $peach;
+          width: 25%;
+        }
+
+        &c4 {
+          background-color: $blue;
+          width: 25%;
+        }
+      }
+
+      &r1 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $yellow;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $purple;
+          width: 25%;
+        }
+
+        &c3 {
+          background-color: $peach;
+          width: 25%;
+        }
+
+        &c4 {
+          background-color: $blue;
+          width: 25%;
+        }
+      }
+    }
   }
 
-  .move {
-    &-right{
-    transition: all 10s ease-in-out;
-    transform: rotate(180deg);
-    background: $color2 !important;
+  // row three ----------------------------------
+  .r3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    grid-auto-rows: 7.9vh;
+
+    &c1 {
+      &r1 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $peach;
+          width: 75%;
+        }
+
+        &c3 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+      }
+
+      &r2 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $purple;
+          width: 50%;
+        }
+
+        &c4 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+      }
+
+      &r3 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $dark-peach;
+          width: 50%;
+        }
+
+        &c4 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+      }
+
+      &r4 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $yellow;
+          width: 50%;
+        }
+
+        &c4 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+      }
     }
-    &-left{
-    transition: all 10s ease-in-out;
-    transform: rotate(-180deg);
-    background: $color3 !important;
+    &c2 {
+      &r1 {
+        display: flex;
+        height: 100%;
+
+        &c1 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $light;
+          width: 25%;
+        }
+
+        &c3 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c4 {
+          background-color: $light;
+          width: 25%;
+        }
+      }
+    }
+    &c3 {
+      &r1 {
+        display: flex;
+        height: 100%;
+
+        &c1 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $light;
+          width: 25%;
+        }
+
+        &c3 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c4 {
+          background-color: $light;
+          width: 25%;
+        }
+      }
+    }
+    &c4 {
+      &r1 {
+        display: flex;
+        height: 100%;
+
+        &c1 {
+          background-color: $dark;
+          width: 50%;
+        }
+
+        &c2 {
+          background-color: $light;
+          width: 50%;
+        }
+      }
     }
   }
+  // row four------------------------------
+  .r4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    grid-auto-rows: 7.9vh;
 
-//   .block:hover{
-//     background: white !important;
-//   }
+    &c1 {
+      &r1 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $yellow;
+          width: 50%;
+        }
+
+        &c4 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+      }
+
+      &r2 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $dark-peach;
+          width: 50%;
+        }
+
+        &c4 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+      }
+      &r3 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $purple;
+          width: 50%;
+        }
+
+        &c4 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+      }
+      &r4 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $peach;
+          width: 75%;
+        }
+
+        &c3 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+      }
+    }
+    &c2 {
+      &r1 {
+        display: flex;
+        height: 100%;
+
+        &c1 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $light;
+          width: 25%;
+        }
+
+        &c3 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c4 {
+          background-color: $light;
+          width: 25%;
+        }
+      }
+    }
+    &c3 {
+      &r1 {
+        display: flex;
+        height: 100%;
+
+        &c1 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $light;
+          width: 25%;
+        }
+
+        &c3 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c4 {
+          background-color: $light;
+          width: 25%;
+        }
+      }
+    }
+    &c4 {
+      &r1 {
+        display: flex;
+        height: 100%;
+
+        &c1 {
+          background-color: $dark;
+          width: 50%;
+        }
+
+        &c2 {
+          background-color: $light;
+          width: 50%;
+        }
+      }
+    }
+  }
+  // row 5 -----------------------------------
+  .r5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    grid-auto-rows: 7.9vh;
+
+    &c1 {
+      &r1 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $light;
+          width: 50%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 50%;
+        }
+      }
+
+      &r2 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $dark;
+          width: 50%;
+        }
+
+        &c2 {
+          background-color: $light;
+          width: 50%;
+        }
+      }
+
+      &r3 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $light;
+          width: 50%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 50%;
+        }
+      }
+
+      &r4 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $dark;
+          width: 50%;
+        }
+
+        &c2 {
+          background-color: $light;
+          width: 50%;
+        }
+      }
+    }
+    // row five column 2    ===============================
+    &c2 {
+      &r1 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $purple;
+          width: 100%;
+        }
+      }
+
+      &r2 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $dark-peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $yellow;
+          width: 75%;
+        }
+
+        &c3 {
+          background-color: $dark-peach;
+          width: 12.5%;
+        }
+      }
+
+      &r3 {
+        display: flex;
+        height: 50%;
+
+        &c1 {
+          background-color: $dark-peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c4 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c5 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c6 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+
+        &c7 {
+          background-color: $dark-peach;
+          width: 12.5%;
+        }
+      }
+    }
+    // row five column 3 ===========================
+    &c3 {
+      &r1 {
+        display: flex;
+        height: 50%;
+
+        &c1 {
+          background-color: $light;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c3 {
+          background-color: $light;
+          width: 25%;
+        }
+
+        &c4 {
+          background-color: $dark;
+          width: 25%;
+        }
+      }
+
+      &r2 {
+        display: flex;
+        height: 50%;
+
+        &c1 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $light;
+          width: 25%;
+        }
+
+        &c3 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c4 {
+          background-color: $light;
+          width: 25%;
+        }
+      }
+    }
+    // row 5 column 4   ------------------
+    &c4 {
+      &r1 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $yellow;
+          width: 50%;
+        }
+
+        &c3 {
+          background-color: $blue;
+          width: 25%;
+        }
+      }
+      &r2 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $dark-peach;
+          width: 50%;
+        }
+
+        &c3 {
+          background-color: $blue;
+          width: 25%;
+        }
+      }
+      &r3 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 50%;
+        }
+
+        &c3 {
+          background-color: $blue;
+          width: 25%;
+        }
+      }
+      &r4 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $peach;
+          width: 50%;
+        }
+
+        &c3 {
+          background-color: $blue;
+          width: 25%;
+        }
+      }
+    }
+  }
+  // -------------row 6----------------------------
+  .r6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    grid-auto-rows: 7.9vh;
+
+    &c1 {
+      &r1 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $light;
+          width: 50%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 50%;
+        }
+      }
+
+      &r2 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $dark;
+          width: 50%;
+        }
+
+        &c2 {
+          background-color: $light;
+          width: 50%;
+        }
+      }
+
+      &r3 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $light;
+          width: 50%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 50%;
+        }
+      }
+
+      &r4 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $dark;
+          width: 50%;
+        }
+
+        &c2 {
+          background-color: $light;
+          width: 50%;
+        }
+      }
+    }
+    // row 6 column 2    ===============================
+    &c2 {
+      &r1 {
+        display: flex;
+        height: 50%;
+
+        &c1 {
+          background-color: $dark-peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c4 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c5 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c6 {
+          background-color: $blue;
+          width: 12.5%;
+        }
+
+        &c7 {
+          background-color: $dark-peach;
+          width: 12.5%;
+        }
+      }
+
+      &r3 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $purple;
+          width: 100%;
+        }
+      }
+
+      &r2 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $dark-peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $yellow;
+          width: 75%;
+        }
+
+        &c3 {
+          background-color: $dark-peach;
+          width: 12.5%;
+        }
+      }
+    }
+    // row 6 column 3 ===========================
+    &c3 {
+      &r1 {
+        display: flex;
+        height: 50%;
+
+        &c1 {
+          background-color: $light;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c3 {
+          background-color: $light;
+          width: 25%;
+        }
+
+        &c4 {
+          background-color: $dark;
+          width: 25%;
+        }
+      }
+
+      &r2 {
+        display: flex;
+        height: 50%;
+
+        &c1 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $light;
+          width: 25%;
+        }
+
+        &c3 {
+          background-color: $dark;
+          width: 25%;
+        }
+
+        &c4 {
+          background-color: $light;
+          width: 25%;
+        }
+      }
+    }
+    // row 6 column 4   ------------------
+    &c4 {
+      &r1 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $peach;
+          width: 50%;
+        }
+
+        &c3 {
+          background-color: $blue;
+          width: 25%;
+        }
+      }
+      &r2 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 50%;
+        }
+
+        &c3 {
+          background-color: $blue;
+          width: 25%;
+        }
+      }
+      &r3 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $dark-peach;
+          width: 50%;
+        }
+
+        &c3 {
+          background-color: $blue;
+          width: 25%;
+        }
+      }
+      &r4 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $blue;
+          width: 25%;
+        }
+
+        &c2 {
+          background-color: $yellow;
+          width: 50%;
+        }
+
+        &c3 {
+          background-color: $blue;
+          width: 25%;
+        }
+      }
+    }
+  }
+  // =========================row7==========================
+  .r7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    grid-auto-rows: 7.9vh;
+
+    &c1 {
+      &r1 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $purple;
+          width: 75%;
+        }
+
+        &c3 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+      }
+      &r2 {
+        display: flex;
+        height: 25%;
+        &c1 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $peach;
+          width: 50%;
+        }
+        &c4 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+      }
+      &r3 {
+        display: flex;
+        height: 25%;
+        &c1 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $dark;
+          width: 50%;
+        }
+        &c4 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+      }
+      &r4 {
+        display: flex;
+        height: 25%;
+        &c1 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $blue;
+          width: 50%;
+        }
+        &c4 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+      }
+    }
+    // row 7 column 2
+    &c2 {
+      &r1 {
+        display: flex;
+        height: 50%;
+        &c1 {
+          background-color: $light;
+          width: 100%;
+        }
+      }
+      &r2 {
+        display: flex;
+        height: 50%;
+        &c1 {
+          background-color: $dark;
+          width: 100%;
+        }
+      }
+    }
+    // row 7 column 3
+    &c3 {
+      &r1 {
+        display: flex;
+        height: 50%;
+        &c1 {
+          background-color: $dark;
+          width: 100%;
+        }
+      }
+      &r2 {
+        display: flex;
+        height: 50%;
+        &c1 {
+          background-color: $light;
+          width: 100%;
+        }
+      }
+    }
+    // row 7 column 4
+    &c4 {
+      &r1 {
+        display: flex;
+        height: 100%;
+        &c1 {
+          background-color: $dark;
+          width: 100%;
+        }
+      }
+    }
+  }
+  // ------------------------ row 8 ----------------------------
+  .r8 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    grid-auto-rows: 7.9vh;
+
+    &c1 {
+      &r1 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $blue;
+          width: 50%;
+        }
+
+        &c4 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+      }
+      &r2 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $dark;
+          width: 50%;
+        }
+
+        &c4 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+      }
+      &r3 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $dark-peach;
+          width: 50%;
+        }
+        &c4 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+      }
+      &r4 {
+        display: flex;
+        height: 25%;
+
+        &c1 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $purple;
+          width: 75%;
+        }
+
+        &c3 {
+          background-color: $peach;
+          width: 12.5%;;
+        }
+      }
+    }
+    // ----------------row 8 column 2-------------------------
+    .r8 {
+      &c2 {
+        &r1 {
+          display: flex;
+          height: 50%;
+          &c1 {
+            background-color: $light;
+            width: 100%;
+          }
+        }
+        &r2 {
+          display: flex;
+          height: 50%;
+          &c1 {
+            background-color: $dark;
+            width: 100%;
+          }
+        }
+      }
+      // -------------------row 8 column 3-------------------------
+      &c3 {
+        &r1 {
+          display: flex;
+          height: 50%;
+          &c1 {
+            background-color: $dark;
+            width: 100%;
+          }
+        }
+        &r2 {
+          display: flex;
+          height: 50%;
+          &c1 {
+            background-color: $light;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  // -------------row 9----------------------
+  .r9 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    grid-auto-rows: 7.9vh;
+
+    &c1 {
+      &r1 {
+        display: flex;
+        height: 100%;
+
+        &c1 {
+          background-color: $light;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $light;
+          width: 12.5%;
+        }
+
+        &c4 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $light;
+          width: 12.5%;
+        }
+
+        &c6 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+
+        &c7 {
+          background-color: $light;
+          width: 12.5%;
+        }
+
+        &c8 {
+          background-color: $dark;
+          width: 12.5%;
+        }
+      }
+      &r2 {
+        display: flex;
+        height: 25%;
+        &c1 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $peach;
+          width: 50%;
+        }
+        &c4 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+      }
+      &r3 {
+        display: flex;
+        height: 25%;
+        &c1 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $dark;
+          width: 50%;
+        }
+        &c4 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+      }
+      &r4 {
+        display: flex;
+        height: 25%;
+        &c1 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+
+        &c2 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c3 {
+          background-color: $blue;
+          width: 50%;
+        }
+        &c4 {
+          background-color: $yellow;
+          width: 12.5%;
+        }
+
+        &c5 {
+          background-color: $peach;
+          width: 12.5%;
+        }
+      }
+    }
+    // row 9 column 2
+    &c2 {
+      &r1 {
+        display: flex;
+        height: 50%;
+        &c1 {
+          background-color: $light;
+          width: 100%;
+        }
+      }
+      &r2 {
+        display: flex;
+        height: 50%;
+        &c1 {
+          background-color: $dark;
+          width: 100%;
+        }
+      }
+    }
+    // row 9 column 3
+    &c3 {
+      &r1 {
+        display: flex;
+        height: 50%;
+        &c1 {
+          background-color: $dark;
+          width: 100%;
+        }
+      }
+      &r2 {
+        display: flex;
+        height: 50%;
+        &c1 {
+          background-color: $light;
+          width: 100%;
+        }
+      }
+    }
+    // row 9 column 4
+    &c4 {
+      &r1 {
+        display: flex;
+        height: 100%;
+        &c1 {
+          background-color: $dark;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:0px) and (max-width:575px) {
+  #container {
+    background-color: $yellow;
+    // padding: 50px 100px 50px;
+    width: 88vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
-  
+  #shapes {
+    background-color: $light;
+    height: 71vh;
+    width: 90vw;
+}
+}
